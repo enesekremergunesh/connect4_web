@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Connect 4 game</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="gameground" class="container" style="background: aqua; width: 25rem;">
+      <div name="row 1" class="row">
+        <div class="col" 
+        style="aspect-ratio: 1;
+        background: white;
+        padding: 0;
+        border-radius: 100%;
+        margin: 0.5rem;" 
+        onclick="printloc(1, 1)">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+        <div class="col" style="aspect-ratio: 1;
+    background: white;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0.5rem;">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <modals>
+
+  </modals>
+
+  <js_import>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/game.js"></script>
+  </js_import>
+
+  <script>
+
+    var matrix = []
+
+    var turn = true;
+
+    Game.init_gameground(6, 7)
+
+    function printloc(row, col){
+      console.log("row: " + row + " col: " + col);
+    }
+  </script>
+</body>
+
+</html>
